@@ -1,5 +1,13 @@
-<h1>Ask</h1>
-<form action="/answer" data-turbo="false">
-  <input type="text" name="question">
-  <input type="submit" value="Ask!">
-</form>
+<div class="container mt-5">
+  <h1>Stupid Coaching</h1>
+  <p>Ask your coach anything:</p>
+
+  <form action="/answer" data-turbo="false" class="row row-cols-lg-auto align-items-center">
+  <div class="input-group mb-3">
+      <input type="text" name="question" class="form-control">
+      <div class="input-group-append">
+        <input type="submit" value="Ask!" class="btn btn-primary">
+      </div>
+ </div>
+  </form>
+</div>

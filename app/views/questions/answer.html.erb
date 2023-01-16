@@ -1,13 +1,15 @@
-<h1>Stupid Coaching</h1>
+<div class="container mt-5">
+  <h1>Stupid Coaching</h1><BR>
 
-<p><q><%= @question %></q> - You</p>
+  <blockquote class="blockquote px-3">
+    <p><%= @question %></p>
+    <footer class="blockquote-footer mt-1"><em>You</em></footer>
+  </blockquote>
 
-<p><q><% if @question == "I am going to work" %>
-  <%= @answer[0] %>
-<% elsif @question.end_with?("?") %>
-  <%= @answer[1] %>
-<% else %>
-  <%= @answer[2]%>
-<% end %></q> - Your coach</p>
+  <blockquote class="blockquote px-3 bg-warning bg-opacity-10">
+    <p><%= @answer %></p>
+    <footer class="blockquote-footer mt-1"><em>Your coach</em></footer>
+  </blockquote>
 
-<%= link_to "Ask a new question", ask_path %>
+  <%= link_to "Ask a new question", ask_path %>
+</div>
